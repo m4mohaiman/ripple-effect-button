@@ -1,0 +1,65 @@
+/*
+Project Name : Ripple Effect Button
+Author: Mohammad A Mohaiman
+version: 1.0.0
+*/
+
+*{margin: 0px; padding: 0px;}
+
+body {
+  background: #2c3e50;
+  font-weight: bold;
+}
+
+.button{
+    padding-top: 250px;
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+
+
+
+button {
+  text-align: center;
+  font-family: 'Exo', sans-serif;
+    font-size: 22px;
+    padding: 10px 40px;
+    border: 0;
+    outline: 0;
+    color: white;
+    background-color: #2ecc71;
+    text-transform: uppercase;
+    border-radius: 0.15em;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.button-2{
+  background: #3498db;
+}
+
+.button-3{
+  background: #f1c40f;
+}
+
+
+
+button .ripple {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
